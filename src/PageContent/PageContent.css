@@ -1,0 +1,8 @@
+.PageContent{
+    min-height:800px;
+  }
+  @media only screen and (max-width: 600px) {
+    .PageContent {
+     min-height:500px;
+    }
+  }

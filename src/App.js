@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import React, { Component } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Layout} from "./Layout/Layout";
+import HomePage from "./Pages/HomePage/HomePage";
+import AboutPage from "./Pages/AboutPage/AboutPage";
+import SkillsPage from "./Pages/SkillsPage/SkillsPage";
+import CVPage from "./Pages/CVPage/CVPage";
+import ContactPage from "./Pages/ContactPage/ContactPage";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+  render() {
+    return (
+      <BrowserRouter>
+      <div className="App">
+      <Layout>
+            <Routes>
+              <Route path="/" element={<HomePage/>} exact />
+              <Route path="/about" element={<AboutPage/>} />
+              <Route path="/skills" element={<SkillsPage/>} />
+              <Route path="/CV" element={<CVPage/>} />
+              <Route path="/contact" element={<ContactPage/>} />
+            </Routes>
+          </Layout>
+      </div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;

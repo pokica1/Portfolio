@@ -1,0 +1,44 @@
+nav {
+    background-color: #0055B7;
+    width: auto;
+    margin-top:0px;
+    font-size:20px;
+  }
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-top:0px;
+    margin-left:25px;
+    margin-right:25px;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  nav li {
+    margin: 10px;
+  }
+  nav a, .footerLink {
+    text-decoration: none;
+    color: white;
+  }
+  .right{
+    margin-left: auto;
+  }
+  .active::before {
+    content:"<";
+  }
+  .active::after {
+    content:"/>";
+  }
+  .home {
+      font-size: 30px;
+  }
+  @media only screen and (max-width: 600px) {
+    nav ul {
+      padding: 0px;
+    }
+    
+    nav a, .footerLink {
+      font-size: 18px;
+     }
+   }
