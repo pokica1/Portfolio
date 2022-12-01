@@ -1,5 +1,6 @@
 .PageContent{
     min-height:800px;
+    background-color: #0055B7;
   }
   @media only screen and (max-width: 600px) {
     .PageContent {

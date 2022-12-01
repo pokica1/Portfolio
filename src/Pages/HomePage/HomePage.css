@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 200px;
+}
+
+.article {
+    font-size: 50px;
+    color: white;
+}
