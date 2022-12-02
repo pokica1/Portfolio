@@ -20,7 +20,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <div>
+    <div className="container">
         <form ref={form} onSubmit={sendEmail}>
             <label>Name*</label>
             <input className='inputField' type="text" name="user_name" required/>
@@ -30,6 +30,7 @@ export const ContactForm = () => {
             <textarea name="message" required/>
             <input className='submit' type="submit" value="Send" />
         </form>
+        <div className='image'><img src='contactImage.svg' alt="woman with an envelope"/></div>
     </div>
   );
 };
