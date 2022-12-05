@@ -1,0 +1,17 @@
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#skills-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+
+.title{
+    font-size: 20px;
+    color: white;
+}

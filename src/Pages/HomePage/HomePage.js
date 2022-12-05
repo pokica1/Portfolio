@@ -7,7 +7,7 @@ import './HomePage.css';
 
 const HomePage = () => (
     <PageContent>
-        <div className="container">
+        <div className="homePage-container">
             <div className='articleContainer'>
                 <div className='article'>This is an article</div>
                     <div className='logoContainer'>
