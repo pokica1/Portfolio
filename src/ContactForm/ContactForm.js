@@ -30,7 +30,7 @@ export const ContactForm = () => {
             <textarea name="message" required/>
             <input className='submit' type="submit" value="Send" />
         </form>
-        <div className='image'><img src='contactImage.svg' alt="woman with an envelope"/></div>
+        <div className='image'><img src='contactImage.svg' alt="woman standing with a big postcard"/></div>
     </div>
   );
 };

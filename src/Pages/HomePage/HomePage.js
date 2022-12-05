@@ -11,7 +11,7 @@ const HomePage = () => (
             <div className='articleContainer'>
                 <div className='article'>This is an article</div>
                     <div className='logoContainer'>
-                        <a href='https://www.linkedin.com/in/orsolya-toro/' target="_blank" rel="noreferrer"><FaLinkedin color='white' size="50px"/></a>
+                        <a href='https://www.linkedin.com/in/orsolya-hubbarde/' target="_blank" rel="noreferrer"><FaLinkedin color='white' size="50px"/></a>
                         <a href='https://github.com/pokica1' target="_blank" rel="noreferrer"><FaGithub color='white' size="50px"/></a>
                     </div>
                 
