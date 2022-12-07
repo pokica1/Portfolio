@@ -1,28 +1,28 @@
 .button-wrapper {
-    display:inline-block;
-    border-radius: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 35px;
-    padding-right: 35px;
-    background-color: #89E9F0;
-    text-decoration: none;
-    color: black;
-    margin: 5px;
-    font-weight: bold;
-  }
-  a{
-      text-decoration: none;
-  }
-  a:visited {
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: none;
-  }
-  a:active {
-    text-decoration: none;
-  }
-  .active {
-    text-decoration: none;
-  }
+	display: inline-block;
+	border-radius: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 35px;
+	padding-right: 35px;
+	background-color: #89e9f0;
+	text-decoration: none;
+	color: black;
+	margin: 5px;
+	font-weight: bold;
+}
+a {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+.active {
+	text-decoration: none;
+}
