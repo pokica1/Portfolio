@@ -9,7 +9,9 @@ const HomePage = () => (
 	<PageContent>
 		<div className="homePage-container">
 			<div className="articleContainer">
-				<div className="article">This is an article</div>
+				<div className="article">
+					Hi, <br /> I am Orsolya Hubbarde, <br /> an aspiring software engineer
+				</div>
 				<div className="logoContainer">
 					<a
 						href="https://www.linkedin.com/in/orsolya-hubbarde/"
@@ -22,15 +24,15 @@ const HomePage = () => (
 						<FaGithub color="white" size="50px" />
 					</a>
 				</div>
+				<NavLink to="/contact">
+					<Button text="Contact" />
+				</NavLink>
 			</div>
 
 			<div className="image">
 				<img src="homePageImage.svg" alt="woman with a laptop" />
 			</div>
 		</div>
-		<NavLink to="/contact">
-			<Button text="Contact" />
-		</NavLink>
 	</PageContent>
 );
 

@@ -8,8 +8,14 @@
 .article {
 	font-size: 50px;
 	color: white;
+	text-align: left;
+	margin-bottom: 20px;
 }
 
 a {
 	margin: 10px;
+}
+
+.logoContainer {
+	margin-bottom: 20px;
 }
