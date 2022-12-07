@@ -17,6 +17,21 @@ const SkillsPage = () => (
 				title="React Native"
 			/>
 		</div>
+		<h1>Education</h1>
+		<div id="education-container">
+			<div>
+				<img
+					id="uni-logo"
+					src="KingstonUniLogo.png"
+					alt="Kingstoin University logo, black background, white fonts"
+				/>
+			</div>
+			<div id="education-description">
+				2019-2022 BSc Computer Science - First Class
+				<br />
+				Kingston University
+			</div>
+		</div>
 	</PageContent>
 );
 

@@ -15,3 +15,18 @@
 	font-size: 20px;
 	color: white;
 }
+#education-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#uni-logo {
+	width: 120px;
+}
+
+#education-description {
+	font-size: 35px;
+	color: white;
+	margin-left: 20px;
+}

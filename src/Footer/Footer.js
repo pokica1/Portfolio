@@ -20,5 +20,8 @@ export const Footer = (props) => (
 		<a href="https://www.flaticon.com/free-icons/css-3" title="css 3 icons">
 			Css 3 icons created by Freepik - Flaticon
 		</a>
+		<a href="https://www.kingston.ac.uk/" title="kingston uni logo">
+			Kingston University logo from their website
+		</a>
 	</div>
 );
