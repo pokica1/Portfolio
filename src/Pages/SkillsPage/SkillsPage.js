@@ -2,10 +2,16 @@ import React from "react";
 import { PageContent } from "../../PageContent/PageContent";
 import "./SkillsPage.css";
 import { SkillsCard } from "../../SkillsCard/SkillsCard";
+import { HiOutlineLightBulb } from "react-icons/hi";
+import { FaGraduationCap } from "react-icons/fa";
 
 const SkillsPage = () => (
 	<PageContent>
-		<h1>Skills</h1>
+		<h1>
+			<HiOutlineLightBulb size="50px" color="white" />
+			Skills
+		</h1>
+
 		<div id="skills-container">
 			<SkillsCard src="js.png" alt="javaScript logo" title="JavaScript" />
 			<SkillsCard src="logo512.png" alt="React logo" title="React" />
@@ -17,7 +23,10 @@ const SkillsPage = () => (
 				title="React Native"
 			/>
 		</div>
-		<h1>Education</h1>
+		<h1 id="education-title">
+			<FaGraduationCap size="50px" color="white" />
+			Education
+		</h1>
 		<div id="education-container">
 			<div>
 				<img
