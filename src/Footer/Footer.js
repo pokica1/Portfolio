@@ -10,7 +10,7 @@ export const Footer = (props) => (
 		</NavLink>
 		<a
 			id="iconURL"
-			href="https://www.flaticon.com/free-icons/javascript"
+			href="https://www.flaticon.com/"
 			title="Icons"
 			target="_blank"
 			rel="noreferrer"
