@@ -5,6 +5,13 @@
 	font-size: 14px;
 	margin-top: 1.5px;
 	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#iconURL {
+	color: white;
+	font-size: smaller;
 }
 @media only screen and (max-width: 600px) {
 	.footer {
