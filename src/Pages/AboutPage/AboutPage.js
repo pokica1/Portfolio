@@ -24,9 +24,7 @@ const AboutPage = () => (
 				<br /> In my free time, I enjoy going on walks with my two golden
 				retrievers, baking desserts and snowboarding in the winter.
 			</div>
-			<div className="image">
-				<img src="profilePicLinkedin.jpg" alt="Orsolya smiling" />
-			</div>
+			<img id="aboutImage" src="profilePicLinkedin.jpg" alt="Orsolya smiling" />
 		</div>
 	</PageContent>
 );

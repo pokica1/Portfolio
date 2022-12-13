@@ -10,3 +10,25 @@
 	font-size: 25px;
 	width: 50%;
 }
+
+@media only screen and (max-width: 600px) {
+	#article-container {
+		display: flex;
+		flex-direction: column;
+		padding-top: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	#info {
+		width: auto;
+		font-size: 20px;
+		order: 1;
+		padding-bottom: 15px;
+	}
+
+	#aboutImage {
+		order: 0;
+		padding-top: 0;
+	}
+}
