@@ -35,4 +35,8 @@ a {
 	#homeImage {
 		padding-top: 20px;
 	}
+
+	.article {
+		font-size: 30px;
+	}
 }
