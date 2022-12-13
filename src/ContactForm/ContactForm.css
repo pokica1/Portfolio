@@ -82,10 +82,12 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 600px) {
-	img {
+	#contactImage {
 		width: auto;
 		height: auto;
-		padding: 25px;
+		padding-left: 25px;
+		padding-right: 25px;
+		order: 0;
 	}
 	#formImageContainer {
 		display: flex;
@@ -94,5 +96,9 @@ textarea:focus {
 	}
 	.message.visible {
 		margin-right: 0;
+	}
+
+	.formContainer.visible {
+		order: 1;
 	}
 }
