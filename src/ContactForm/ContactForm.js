@@ -50,9 +50,7 @@ export const ContactForm = () => {
 			<div className={isMessageSent ? "message visible" : "message notVisible"}>
 				Thank you for your message, it has been sent!
 			</div>
-			<div className="image">
-				<img src="contactImage.svg" alt="woman standing with a big postcard" />
-			</div>
+			<img src="contactImage.svg" alt="woman standing with a big postcard" />
 		</div>
 	);
 };

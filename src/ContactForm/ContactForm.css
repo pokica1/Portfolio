@@ -80,3 +80,19 @@ textarea:focus {
 	font-weight: bold;
 	font-size: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+	img {
+		width: auto;
+		height: auto;
+		padding: 25px;
+	}
+	#formImageContainer {
+		display: flex;
+		flex-direction: column;
+		padding-top: 25px;
+	}
+	.message.visible {
+		margin-right: 0;
+	}
+}
