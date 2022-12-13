@@ -2,7 +2,11 @@ nav {
 	background-color: #0055b7;
 	width: auto;
 	margin-top: 0px;
+	margin-bottom: 1.5px;
 	font-size: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 nav ul {
 	display: flex;
@@ -33,14 +37,54 @@ nav a,
 }
 .home {
 	font-size: 30px;
+	order: 3;
+}
+.mobileNav {
+	display: none;
 }
 @media only screen and (max-width: 600px) {
-	nav ul {
-		padding: 0px;
+	.mobileNav {
+		display: contents;
 	}
 
-	nav a,
 	.footerLink {
 		font-size: 18px;
+	}
+	.navMenu ul {
+		flex-direction: column;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		background-color: #0055b7;
+		display: none;
+	}
+	.navMenu li {
+		text-align: center;
+		margin: 20px;
+		border-top: 5px white;
+	}
+
+	.navMenu.expanded ul {
+		display: block;
+	}
+	.home {
+		display: none;
+	}
+	button.hamburger {
+		background-color: #0055b7;
+		border: 0;
+	}
+	nav {
+		width: 100%;
+		justify-content: space-between;
+	}
+	ul {
+		margin-block-start: 0;
+		margin-block-end: 0;
+		padding-inline-start: 0;
 	}
 }
