@@ -17,6 +17,7 @@ const SkillsPage = () => (
 			<SkillsCard src="logo512.png" alt="React logo" title="React" />
 			<SkillsCard src="html.png" alt="HTML logo" title="HTML" />
 			<SkillsCard src="css.png" alt="CSS logo" title="CSS" />
+			<SkillsCard src="java.png" alt="Java logo" title="Java" />
 			<SkillsCard
 				src="logo512.png"
 				alt="React Native logo"
