@@ -28,10 +28,7 @@ const HomePage = () => (
 					<Button text="Contact" />
 				</NavLink>
 			</div>
-
-			<div className="image">
-				<img src="homePageImage.svg" alt="woman with a laptop" />
-			</div>
+			<img id="homeImage" src="homePageImage.svg" alt="woman with a laptop" />
 		</div>
 	</PageContent>
 );

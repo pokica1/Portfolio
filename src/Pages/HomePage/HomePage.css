@@ -21,3 +21,18 @@ a {
 .logoContainer {
 	margin-bottom: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+	.homePage-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding-top: 15px;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+	#homeImage {
+		padding-top: 20px;
+	}
+}
