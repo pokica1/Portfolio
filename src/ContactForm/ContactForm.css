@@ -6,10 +6,30 @@ form {
 	flex-grow: 2;
 }
 
-#form-container {
+#formImageContainer {
 	display: flex;
 	justify-content: center;
 	padding-top: 100px;
+}
+
+.formContainer.visible {
+	display: flex;
+}
+
+.formContainer.notVisible {
+	display: none;
+}
+
+.message.visible {
+	display: flex;
+	align-items: center;
+	color: white;
+	font-size: 30px;
+	margin-right: 100px;
+}
+
+.message.notVisible {
+	display: none;
 }
 
 .inputField {

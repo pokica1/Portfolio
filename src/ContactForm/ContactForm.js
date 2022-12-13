@@ -1,9 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./ContactForm.css";
 
 export const ContactForm = () => {
 	const form = useRef();
+	const [isMessageSent, setIsMessageSent] = useState(false);
 
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -18,8 +19,9 @@ export const ContactForm = () => {
 			.then(
 				(result) => {
 					console.log(result.text);
-					alert("Thank you for your message");
-					e.target.reset();
+					// alert("Thank you for your message");
+					// e.target.reset();
+					setIsMessageSent(!isMessageSent);
 				},
 				(error) => {
 					console.log(error.text);
@@ -29,8 +31,14 @@ export const ContactForm = () => {
 	};
 
 	return (
-		<div id="form-container">
-			<form ref={form} onSubmit={sendEmail}>
+		<div id="formImageContainer">
+			<form
+				className={
+					isMessageSent ? "formContainer notVisible" : "formContainer visible"
+				}
+				ref={form}
+				onSubmit={sendEmail}
+			>
 				<label>Name*</label>
 				<input className="inputField" type="text" name="user_name" required />
 				<label>Email*</label>
@@ -39,6 +47,9 @@ export const ContactForm = () => {
 				<textarea name="message" required />
 				<input className="submit" type="submit" value="Send" />
 			</form>
+			<div className={isMessageSent ? "message visible" : "message notVisible"}>
+				Thank you for your message, it has been sent!
+			</div>
 			<div className="image">
 				<img src="contactImage.svg" alt="woman standing with a big postcard" />
 			</div>
