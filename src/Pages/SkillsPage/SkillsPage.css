@@ -34,3 +34,23 @@
 #education-title {
 	margin-top: 150px;
 }
+
+@media only screen and (max-width: 600px) {
+	#skills-container {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		justify-content: center;
+	}
+
+	#education-description {
+		font-size: 20px;
+	}
+
+	#education-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-bottom: 20px;
+	}
+}
