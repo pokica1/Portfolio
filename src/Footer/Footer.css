@@ -13,14 +13,26 @@
 	color: white;
 	font-size: smaller;
 }
-@media only screen and (max-width: 600px) {
-	.footer {
-		font-size: 14px;
-	}
+#footerURL {
+	color: white;
+}
+#illustrationURL {
+	color: white;
+	font-size: smaller;
+}
+.thirdPartyLinkContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10px;
+}
+@media only screen and (max-width: 1200px) {
 	#footerURL {
 		font-size: 14px;
 	}
-}
-#footerURL {
-	color: white;
+	.thirdPartyLinkContainer {
+		margin-top: 10px;
+		flex-direction: column;
+		gap: 0;
+	}
 }
