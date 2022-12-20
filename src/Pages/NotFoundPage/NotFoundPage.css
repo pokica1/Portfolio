@@ -1,0 +1,17 @@
+#NotFoundPageContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#PageNotFoundImage {
+	width: 50%;
+	height: 50%;
+	margin-top: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+	#PageNotFoundImage {
+		margin-top: 100px;
+	}
+}
