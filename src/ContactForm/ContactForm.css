@@ -91,11 +91,12 @@ textarea:focus {
 		flex-grow: 2;
 	}
 	#contactImage {
-		width: auto;
+		width: 50%;
 		height: auto;
 		padding-left: 25px;
 		padding-right: 25px;
 		order: 0;
+		align-self: center;
 	}
 	#formImageContainer {
 		display: flex;
@@ -117,5 +118,8 @@ textarea:focus {
 		width: 50%;
 		height: auto;
 		padding-right: 20px;
+	}
+	#formImageContainer {
+		padding-top: 0;
 	}
 }
