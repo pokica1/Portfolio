@@ -1,7 +1,8 @@
 # Portfolio Project :computer:
 
 This portfolio project has been created with React Library.\
-Click here to visit the live website: https://orsolyahubbarde.com
+
+<!-- Click here to visit the live website: https://orsolyahubbarde.com -->
 
 ## Main tools
 
