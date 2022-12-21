@@ -3,14 +3,12 @@
 	flex-direction: column;
 	justify-content: center;
 }
-
 #skills-container {
 	display: flex;
 	flex-direction: row;
 	gap: 15px;
 	justify-content: center;
 }
-
 .title {
 	font-size: 20px;
 	color: white;
@@ -20,35 +18,27 @@
 	flex-direction: row;
 	justify-content: center;
 }
-
 #uni-logo {
 	width: 120px;
 }
-
 #education-description {
 	font-size: 35px;
 	color: white;
 	margin-left: 20px;
 }
-
 #education-title {
 	margin-top: 150px;
 }
 
 @media only screen and (max-width: 600px) {
 	#skills-container {
-		display: flex;
 		flex-wrap: wrap;
 	}
-
 	#education-description {
 		font-size: 20px;
 	}
-
 	#education-container {
-		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		padding-bottom: 20px;
 		padding-left: 10px;
 	}
@@ -56,20 +46,16 @@
 		margin-top: 50px;
 	}
 }
+
 @media only screen and (max-width: 1200px) {
 	#skills-container {
-		display: flex;
 		flex-wrap: wrap;
 	}
-
 	#education-description {
 		font-size: 20px;
 	}
-
 	#education-container {
-		display: flex;
 		flex-direction: row;
-		justify-content: center;
 		padding-bottom: 20px;
 	}
 	#education-title {
