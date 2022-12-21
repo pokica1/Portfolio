@@ -13,20 +13,17 @@
 
 @media only screen and (max-width: 600px) {
 	#article-container {
-		display: flex;
 		flex-direction: column;
 		padding-top: 0;
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-
 	#info {
 		width: auto;
 		font-size: 20px;
 		order: 1;
 		padding-bottom: 15px;
 	}
-
 	#aboutImage {
 		height: 250px;
 		width: 250px;
@@ -38,19 +35,16 @@
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
 	#article-container {
-		display: flex;
 		flex-direction: column;
 		padding-top: 0;
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-
 	#info {
 		font-size: 20px;
 		width: auto;
 		order: 1;
 	}
-
 	#aboutImage {
 		height: 400px;
 		width: 400px;
@@ -59,19 +53,16 @@
 		padding-top: 0;
 	}
 }
+
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
 	#article-container {
-		display: flex;
-		flex-direction: row;
 		padding-top: 0;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-
 	#info {
 		font-size: 20px;
 	}
-
 	#aboutImage {
 		height: 400px;
 		width: 400px;
