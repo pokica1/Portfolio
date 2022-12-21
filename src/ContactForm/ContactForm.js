@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { FormField } from "../FormField/FormField";
 import emailjs from "@emailjs/browser";
 import "./ContactForm.css";
 
@@ -19,8 +20,6 @@ export const ContactForm = () => {
 			.then(
 				(result) => {
 					console.log(result.text);
-					// alert("Thank you for your message");
-					// e.target.reset();
 					setIsMessageSent(!isMessageSent);
 				},
 				(error) => {
@@ -39,10 +38,8 @@ export const ContactForm = () => {
 				ref={form}
 				onSubmit={sendEmail}
 			>
-				<label>Name*</label>
-				<input className="inputField" type="text" name="user_name" required />
-				<label>Email*</label>
-				<input className="inputField" type="email" name="user_email" required />
+				<FormField labelText="Name*" type="text" name="user_name" />
+				<FormField labelText="Email*" type="email" name="user_email" />
 				<label>Message*</label>
 				<textarea name="message" required />
 				<input className="submit" type="submit" value="Send" />

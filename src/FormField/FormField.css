@@ -1,0 +1,16 @@
+.inputField {
+	height: 40px;
+	width: 80%;
+	padding: 10px;
+	outline: none;
+	border-radius: 20px;
+	font-size: 20px;
+}
+.inputField:focus {
+	border: 8px solid #89e9f0;
+}
+label {
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+}
