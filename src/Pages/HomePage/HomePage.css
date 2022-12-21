@@ -1,21 +1,34 @@
+.homePage-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 200px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.article {
+	font-size: 50px;
+	color: white;
+	text-align: left;
+	margin-bottom: 20px;
+}
+a {
+	margin: 10px;
+}
+.logoContainer {
+	margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 600px) {
 	.homePage-container {
-		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
 		padding-top: 15px;
-		margin-left: 50px;
-		margin-right: 50px;
 	}
-
 	#homeImage {
 		padding-top: 20px;
 	}
-
 	.article {
 		font-size: 30px;
-		color: white;
-		text-align: left;
 	}
 	.articleContainer {
 		display: flex;
@@ -31,22 +44,14 @@
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
 	.homePage-container {
-		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
 		padding-top: 100px;
-		margin-left: 50px;
-		margin-right: 50px;
 	}
-
 	#homeImage {
 		padding-top: 20px;
 	}
-
 	.article {
-		text-align: left;
 		font-size: 40px;
-		color: white;
 	}
 	.articleContainer {
 		display: flex;
@@ -54,7 +59,6 @@
 		text-align: center;
 		row-gap: 20px;
 	}
-
 	.logoContainer {
 		display: flex;
 		justify-content: center;
@@ -64,59 +68,12 @@
 
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
 	.homePage-container {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
 		padding-top: 100px;
-		margin-left: 50px;
-		margin-right: 50px;
 		width: auto;
 		text-align: center;
 	}
-
-	.article {
-		font-size: 50px;
-		color: white;
-		text-align: left;
-		margin-bottom: 20px;
-	}
-
-	a {
-		margin: 10px;
-	}
-
-	.logoContainer {
-		margin-bottom: 20px;
-	}
-
 	#homeImage {
 		width: 50%;
 		height: auto;
-	}
-}
-
-@media only screen and (min-width: 1201px) {
-	.homePage-container {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		padding-top: 200px;
-		margin-left: 50px;
-		margin-right: 50px;
-	}
-
-	.article {
-		font-size: 50px;
-		color: white;
-		text-align: left;
-		margin-bottom: 20px;
-	}
-
-	a {
-		margin: 10px;
-	}
-
-	.logoContainer {
-		margin-bottom: 20px;
 	}
 }
