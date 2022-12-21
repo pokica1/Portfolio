@@ -1,10 +1,10 @@
 import React from "react";
 import { PageContent } from "../../PageContent/PageContent";
 
-const CVPage = () => (
+const BlogPage = () => (
 	<PageContent>
-		<h1>Welcome to the CV Page</h1>
+		<h1>Welcome to the Blog Page</h1>
 	</PageContent>
 );
 
-export default CVPage;
+export default BlogPage;

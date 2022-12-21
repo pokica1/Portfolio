@@ -42,12 +42,12 @@ export default function NavBar() {
 					</li>
 					<li>
 						<NavLink
-							to="/CV"
+							to="/Blog"
 							onClick={() => {
 								setIsNavBarExpanded(!isNavBarExpanded);
 							}}
 						>
-							CV
+							Blog
 						</NavLink>
 					</li>
 					<li>
