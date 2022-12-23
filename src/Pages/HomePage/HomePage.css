@@ -24,21 +24,22 @@ a {
 		flex-direction: column;
 		padding-top: 15px;
 	}
-	#homeImage {
-		padding-top: 20px;
-	}
 	.article {
 		font-size: 30px;
+		margin-bottom: 0;
 	}
 	.articleContainer {
 		display: flex;
 		flex-direction: column;
-		row-gap: 20px;
 	}
 	.logoContainer {
 		display: flex;
 		justify-content: center;
 		gap: 30px;
+		margin-bottom: 0;
+	}
+	#homeContactButton {
+		margin-top: 0;
 	}
 }
 
@@ -47,22 +48,23 @@ a {
 		flex-direction: column;
 		padding-top: 100px;
 	}
-	#homeImage {
-		padding-top: 20px;
-	}
 	.article {
 		font-size: 40px;
+		margin-bottom: 0;
 	}
 	.articleContainer {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
-		row-gap: 20px;
 	}
 	.logoContainer {
 		display: flex;
 		justify-content: center;
 		gap: 30px;
+		margin-bottom: 0;
+	}
+	#homeContactButton {
+		margin-top: 0;
 	}
 }
 

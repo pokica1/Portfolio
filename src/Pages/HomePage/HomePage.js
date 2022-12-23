@@ -24,7 +24,7 @@ const HomePage = () => (
 						<FaGithub color="white" size="50px" />
 					</a>
 				</div>
-				<NavLink to="/contact">
+				<NavLink id="homeContactButton" to="/contact">
 					<Button text="Contact" />
 				</NavLink>
 			</div>
