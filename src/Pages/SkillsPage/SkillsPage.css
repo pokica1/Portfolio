@@ -3,21 +3,22 @@
 	flex-direction: column;
 	justify-content: center;
 }
+#skills-content {
+	text-align: center;
+	max-width: 55%;
+	margin-left: auto;
+	margin-right: auto;
+}
 #skills-container {
 	display: flex;
 	flex-direction: row;
 	gap: 15px;
 	justify-content: center;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-.title {
-	font-size: 20px;
-	color: white;
 }
 #education-container {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 	justify-content: center;
 }
 #uni-logo {
@@ -26,38 +27,48 @@
 #education-description {
 	font-size: 20px;
 	color: white;
-	margin-left: 20px;
+	margin-left: 15px;
+	text-align: left;
+}
+#skills-title {
+	padding-bottom: 50px;
 }
 #education-title {
-	margin-top: 150px;
+	padding-bottom: 50px;
+}
+#experience-title {
+	padding-bottom: 50px;
 }
 #experience-container {
 	display: flex;
 	flex-direction: row;
-	justify-content: right;
 	align-items: center;
 	font-size: 20px;
 	color: white;
 	padding-bottom: 20px;
-	margin-left: 15%;
-	margin-right: 15%;
-}
-p,
-h3 {
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	margin-left: 20px;
-	text-align: left;
 }
 #perlego-logo {
 	width: 120px;
 	height: 120px;
 }
+#description > h3,
+p {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	margin-right: 0px;
+	margin-left: 20px;
+	text-align: left;
+}
 
 @media only screen and (max-width: 600px) {
 	#skills-container {
 		flex-wrap: wrap;
+	}
+	#skills-title {
+		padding-bottom: 0;
+	}
+	#skills-content {
+		max-width: 90%;
 	}
 	#education-description {
 		font-size: 20px;
@@ -65,27 +76,31 @@ h3 {
 	#education-container {
 		flex-direction: column;
 		padding-bottom: 20px;
-		padding-left: 10px;
 	}
 	#education-title {
-		margin-top: 50px;
+		padding-bottom: 0;
+		margin-top: 25px;
+	}
+	#experience-title {
+		padding-bottom: 0;
 	}
 	#experience-container {
 		flex-direction: column;
 		width: auto;
-		margin-left: 10px;
-		margin-right: 10px;
 	}
 	#perlego-logo {
 		width: 80px;
 		height: 80px;
 		margin-bottom: 10px;
 	}
-	p,
-	h3 {
+	#uni-logo {
+		width: 100px;
+	}
+	#description > h3,
+	p {
 		margin-left: 0;
 	}
-	h3 {
+	#description > h3 {
 		margin-bottom: 10px;
 	}
 }
@@ -93,6 +108,12 @@ h3 {
 @media only screen and (max-width: 1200px) {
 	#skills-container {
 		flex-wrap: wrap;
+	}
+	#skills-title {
+		padding-bottom: 0;
+	}
+	#skills-content {
+		max-width: 90%;
 	}
 	#education-description {
 		font-size: 20px;
@@ -102,23 +123,28 @@ h3 {
 		padding-bottom: 20px;
 	}
 	#education-title {
-		margin-top: 50px;
+		margin-top: 25px;
+		padding-bottom: 0;
+	}
+	#experience-title {
+		padding-bottom: 0;
 	}
 	#experience-container {
 		flex-direction: column;
-		margin-left: 20px;
-		margin-right: 20px;
 	}
 	#perlego-logo {
 		width: 80px;
 		height: 80px;
 		margin-bottom: 10px;
 	}
-	p,
-	h3 {
+	#uni-logo {
+		width: 100px;
+	}
+	#description > h3,
+	p {
 		margin-left: 0;
 	}
-	h3 {
+	#description > h3 {
 		margin-bottom: 10px;
 	}
 }
