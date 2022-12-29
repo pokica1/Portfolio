@@ -3,8 +3,9 @@
 	flex-direction: row;
 	justify-content: space-around;
 	padding-top: 200px;
-	margin-left: 50px;
-	margin-right: 50px;
+	max-width: 55%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .article {
 	font-size: 50px;
@@ -18,11 +19,15 @@ a {
 .logoContainer {
 	margin-bottom: 20px;
 }
+#homeImage {
+	width: 40%;
+}
 
 @media only screen and (max-width: 600px) {
 	.homePage-container {
 		flex-direction: column;
 		padding-top: 15px;
+		max-width: 90%;
 	}
 	.article {
 		font-size: 30px;
@@ -41,12 +46,17 @@ a {
 	#homeContactButton {
 		margin-top: 0;
 	}
+	#homeImage {
+		width: 80%;
+		align-self: center;
+	}
 }
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
 	.homePage-container {
 		flex-direction: column;
 		padding-top: 100px;
+		max-width: 90%;
 	}
 	.article {
 		font-size: 40px;
@@ -66,16 +76,23 @@ a {
 	#homeContactButton {
 		margin-top: 0;
 	}
+	#homeImage {
+		width: 80%;
+		height: auto;
+		align-self: center;
+	}
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
 	.homePage-container {
 		padding-top: 100px;
-		width: auto;
+		max-width: 90%;
+		/* margin-left: auto;
+		margin-right: auto; */
 		text-align: center;
 	}
 	#homeImage {
-		width: 50%;
+		width: 40%;
 		height: auto;
 	}
 }
