@@ -51,9 +51,7 @@ const SkillsPage = () => (
 				Experience
 			</h1>
 			<div id="experience-container">
-				<div>
-					<img id="perlego-logo" src="Perlego.jpg" alt="P letter as a logo" />
-				</div>
+				<img id="perlego-logo" src="Perlego.jpg" alt="P letter as a logo" />
 				<div id="description">
 					<h3>
 						Perlego - April 2020 - September 2020 - Quality Assurance Engineer

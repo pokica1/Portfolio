@@ -105,7 +105,52 @@ p {
 	}
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+	#skills-container {
+		flex-wrap: wrap;
+	}
+	#skills-title {
+		padding-bottom: 0;
+	}
+	#skills-content {
+		max-width: 90%;
+	}
+	#education-description {
+		font-size: 20px;
+	}
+	#education-container {
+		flex-direction: column;
+		padding-bottom: 20px;
+	}
+	#education-title {
+		padding-bottom: 0;
+		margin-top: 25px;
+	}
+	#experience-title {
+		padding-bottom: 0;
+	}
+	#experience-container {
+		flex-direction: column;
+		width: auto;
+	}
+	#perlego-logo {
+		width: 80px;
+		height: 80px;
+		margin-bottom: 10px;
+	}
+	#uni-logo {
+		width: 100px;
+	}
+	#description > h3,
+	p {
+		margin-left: 0;
+	}
+	#description > h3 {
+		margin-bottom: 10px;
+	}
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
 	#skills-container {
 		flex-wrap: wrap;
 	}
@@ -130,7 +175,7 @@ p {
 		padding-bottom: 0;
 	}
 	#experience-container {
-		flex-direction: column;
+		flex-direction: row;
 	}
 	#perlego-logo {
 		width: 80px;
@@ -142,7 +187,7 @@ p {
 	}
 	#description > h3,
 	p {
-		margin-left: 0;
+		margin-left: 15px;
 	}
 	#description > h3 {
 		margin-bottom: 10px;
