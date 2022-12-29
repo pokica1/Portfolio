@@ -1,10 +1,10 @@
 import React from "react";
 import { PageContent } from "../../PageContent/PageContent";
 
-const BlogPage = () => (
+const ProjectsPage = () => (
 	<PageContent>
-		<h1>Welcome to the Blog Page</h1>
+		<h1>Welcome to the Projects Page</h1>
 	</PageContent>
 );
 
-export default BlogPage;
+export default ProjectsPage;

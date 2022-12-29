@@ -4,7 +4,7 @@ import { Layout } from "./Layout/Layout";
 import HomePage from "./Pages/HomePage/HomePage";
 import AboutPage from "./Pages/AboutPage/AboutPage";
 import SkillsPage from "./Pages/SkillsPage/SkillsPage";
-import BlogPage from "./Pages/BlogPage/BlogPage";
+import ProjectsPage from "./Pages/ProjectsPage/ProjectsPage";
 import ContactPage from "./Pages/ContactPage/ContactPage";
 import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
 import "./App.css";
@@ -19,7 +19,7 @@ class App extends Component {
 							<Route path="/" element={<HomePage />} exact />
 							<Route path="/about" element={<AboutPage />} />
 							<Route path="/skills" element={<SkillsPage />} />
-							<Route path="/Blog" element={<BlogPage />} />
+							<Route path="/Projects" element={<ProjectsPage />} />
 							<Route path="/contact" element={<ContactPage />} />
 							<Route path="*" element={<NotFoundPage />} />
 						</Routes>
