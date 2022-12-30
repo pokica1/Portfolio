@@ -45,6 +45,7 @@ textarea {
 	border-radius: 20px;
 	margin-bottom: 20px;
 	font-size: 20px;
+	box-sizing: border-box;
 }
 textarea:focus {
 	border: 8px solid #89e9f0;

@@ -4,6 +4,7 @@
 	outline: none;
 	border-radius: 20px;
 	font-size: 20px;
+	box-sizing: border-box;
 }
 .inputField:focus {
 	border: 8px solid #89e9f0;
