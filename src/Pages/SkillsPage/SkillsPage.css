@@ -14,12 +14,14 @@
 	flex-direction: row;
 	gap: 15px;
 	justify-content: center;
+	margin-bottom: 40px;
 }
 #education-container {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 40px;
 }
 #uni-logo {
 	width: 120px;
@@ -35,9 +37,11 @@
 }
 #education-title {
 	padding-bottom: 50px;
+	box-shadow: 0 -8px 6px -6px white;
 }
 #experience-title {
 	padding-bottom: 50px;
+	box-shadow: 0 -8px 6px -6px white;
 }
 #experience-container {
 	display: flex;
