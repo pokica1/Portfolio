@@ -1,6 +1,7 @@
 .PageContent {
 	min-height: 950px;
 	background-color: #0055b7;
+	box-shadow: 0 -8px 6px -6px white;
 }
 @media only screen and (max-width: 600px) {
 	.PageContent {
