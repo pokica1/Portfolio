@@ -10,7 +10,9 @@ const HomePage = () => (
 		<div className="homePage-container">
 			<div className="articleContainer">
 				<div className="article">
-					Hi, <br /> I am Orsolya Hubbarde, <br /> an aspiring software engineer
+					<p className="homeParagraph">Hi,</p>
+					<p className="homeParagraph">I am Orsolya Hubbarde,</p>
+					<p className="homeParagraph">an aspiring software engineer</p>
 				</div>
 				<div className="logoContainer">
 					<a
