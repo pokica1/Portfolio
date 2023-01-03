@@ -2,11 +2,12 @@ nav {
 	background-color: #0055b7;
 	width: auto;
 	margin-top: 0px;
-	margin-bottom: 1.5px;
 	font-size: 20px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	position: relative;
+	box-shadow: 0 8px 6px -6px white;
 }
 nav ul {
 	display: flex;

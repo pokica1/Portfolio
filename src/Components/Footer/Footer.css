@@ -3,11 +3,12 @@
 	background-color: #0055b7;
 	text-align: center;
 	font-size: 14px;
-	margin-top: 1.5px;
+	/* margin-top: 1.5px; */
 	color: white;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	box-shadow: 0 -8px 6px -6px white;
 }
 #iconURL {
 	color: white;
