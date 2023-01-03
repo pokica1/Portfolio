@@ -1,0 +1,9 @@
+#projectPage-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	max-width: 55%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 200px;
+}
