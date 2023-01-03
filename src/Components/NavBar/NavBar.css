@@ -78,6 +78,7 @@ nav a,
 	button.hamburger {
 		background-color: #0055b7;
 		border: 0;
+		margin: 10px;
 	}
 	nav {
 		width: 100%;
