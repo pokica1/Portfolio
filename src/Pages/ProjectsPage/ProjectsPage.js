@@ -1,6 +1,6 @@
 import React from "react";
-import { PageContent } from "../../PageContent/PageContent";
-import { ProjectCard } from "../../ProjectCard/ProjectCard";
+import { PageContent } from "../../Components/PageContent/PageContent";
+import { ProjectCard } from "../../Components/ProjectCard/ProjectCard";
 import "./ProjectsPage.css";
 
 const ProjectsPage = () => (

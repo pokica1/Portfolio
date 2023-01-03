@@ -1,6 +1,6 @@
 import React from "react";
-import { PageContent } from "../../PageContent/PageContent";
-import { ContactForm } from "../../ContactForm/ContactForm";
+import { PageContent } from "../../Components/PageContent/PageContent";
+import { ContactForm } from "../../Components/ContactForm/ContactForm";
 import "./ContactPage.css";
 
 const ContactPage = () => (

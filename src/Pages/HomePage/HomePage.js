@@ -1,7 +1,7 @@
 import React from "react";
-import { PageContent } from "../../PageContent/PageContent";
+import { PageContent } from "../../Components/PageContent/PageContent";
 import { NavLink } from "react-router-dom";
-import { Button } from "../../Button/Button";
+import { Button } from "../../Components/Button/Button";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import "./HomePage.css";
 

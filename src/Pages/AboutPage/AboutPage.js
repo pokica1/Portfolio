@@ -1,5 +1,5 @@
 import React from "react";
-import { PageContent } from "../../PageContent/PageContent";
+import { PageContent } from "../../Components/PageContent/PageContent";
 import "./AboutPage.css";
 
 const AboutPage = () => (

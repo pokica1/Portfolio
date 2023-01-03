@@ -1,7 +1,7 @@
 import React from "react";
-import { PageContent } from "../../PageContent/PageContent";
+import { PageContent } from "../../Components/PageContent/PageContent";
 import "./SkillsPage.css";
-import { SkillsCard } from "../../SkillsCard/SkillsCard";
+import { SkillsCard } from "../../Components/SkillsCard/SkillsCard";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { FaGraduationCap, FaUserTie } from "react-icons/fa";
 
