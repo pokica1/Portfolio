@@ -27,6 +27,7 @@ export default function NavBar() {
 					</li>
 					<li>
 						<NavLink
+							id="skillsLink"
 							to="/skills"
 							onClick={() => {
 								setIsNavBarExpanded(!isNavBarExpanded);
@@ -42,6 +43,7 @@ export default function NavBar() {
 					</li>
 					<li>
 						<NavLink
+							id="projectsLink"
 							to="/Projects"
 							onClick={() => {
 								setIsNavBarExpanded(!isNavBarExpanded);
@@ -52,6 +54,7 @@ export default function NavBar() {
 					</li>
 					<li>
 						<NavLink
+							id="contactLink"
 							to="/contact"
 							onClick={() => {
 								setIsNavBarExpanded(!isNavBarExpanded);
