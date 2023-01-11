@@ -1,12 +1,14 @@
 #projectPage-container {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	gap: 20px;
 	justify-content: center;
 	max-width: 55%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 100px;
+	padding-bottom: 50px;
 }
 #projectPageTitle {
 	padding-top: 50px;
