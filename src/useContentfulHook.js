@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 function useContentfulHook(query) {
 	const [data, setData] = useState(null);
+	const [errors, setErrors] = useState(null);
 
 	useEffect(() => {
 		window
@@ -19,11 +20,13 @@ function useContentfulHook(query) {
 				}
 			)
 			.then((response) => response.json())
-			.then((json) => {
-				setData(json.data);
-			});
+			.then(({ data, errors }) => {
+				if (errors) setErrors(errors);
+				if (data) setData(data);
+			})
+			.catch((error) => setErrors([error]));
 	}, [query]);
-	return { data };
+	return { data, errors };
 }
 
 export default useContentfulHook;

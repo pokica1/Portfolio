@@ -20,11 +20,11 @@ const query = `query {
   }`;
 
 function AboutPage() {
-	let { data } = useContentfulHook(query);
+	let { data, errors } = useContentfulHook(query);
 
-	// if (errors) {
-	// 	return <div>{errors.map((error) => error.message).join(",")}</div>;
-	// }
+	if (errors) {
+		return <div>{errors.map((error) => error.message).join(",")}</div>;
+	}
 
 	if (!data) {
 		return "Loading...";
