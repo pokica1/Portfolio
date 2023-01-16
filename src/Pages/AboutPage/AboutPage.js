@@ -11,7 +11,8 @@ const query = `query {
 			json
 		}
 		orsolya{
-		  url
+			title	
+		  	url
 		}
 	  }
 	}
@@ -57,7 +58,7 @@ function AboutPage() {
 						{documentToReactComponents(page.aboutDescription.json)}
 					</div>
 				</div>
-				<img id="aboutImage" src={page.orsolya.url} alt="Orsolya smiling" />
+				<img id="aboutImage" src={page.orsolya.url} alt={page.orsolya.title} />
 			</div>
 		</PageContent>
 	);
