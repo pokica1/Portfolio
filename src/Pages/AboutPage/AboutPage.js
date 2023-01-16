@@ -10,12 +10,6 @@ const query = `query {
 		aboutDescription {
 			json
 		}
-		aboutParagraph1
-		aboutParagraph2
-		aboutParagraph3
-		aboutParagraph4
-		aboutParagraph5
-		aboutParagraph6
 		orsolya{
 		  url
 		}
@@ -62,12 +56,6 @@ function AboutPage() {
 					<p className="aboutParagraph">
 						{documentToReactComponents(page.aboutDescription.json)}
 					</p>
-					{/* <p className="aboutParagraph">{page.aboutParagraph1}</p>
-					<p className="aboutParagraph">{page.aboutParagraph2}</p>
-					<p className="aboutParagraph">{page.aboutParagraph3}</p>
-					<p className="aboutParagraph">{page.aboutParagraph4}</p>
-					<p className="aboutParagraph">{page.aboutParagraph5}</p>
-					<p className="aboutParagraph">{page.aboutParagraph6}</p> */}
 				</div>
 				<img id="aboutImage" src={page.orsolya.url} alt="Orsolya smiling" />
 			</div>
