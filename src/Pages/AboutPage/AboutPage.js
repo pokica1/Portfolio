@@ -53,9 +53,9 @@ function AboutPage() {
 			<h1>{page.title}</h1>
 			<div id="article-container">
 				<div id="info">
-					<p className="aboutParagraph">
+					<div className="aboutParagraph">
 						{documentToReactComponents(page.aboutDescription.json)}
-					</p>
+					</div>
 				</div>
 				<img id="aboutImage" src={page.orsolya.url} alt="Orsolya smiling" />
 			</div>
