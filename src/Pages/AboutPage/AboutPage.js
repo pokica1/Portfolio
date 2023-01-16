@@ -1,41 +1,78 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import { PageContent } from "../../Components/PageContent/PageContent";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import "./AboutPage.css";
 
-const AboutPage = () => (
-	<PageContent>
-		<h1>About me</h1>
-		<div id="article-container">
-			<div id="info">
-				<p className="aboutParagraph">
-					I recently obtained a first-class degree in BSc Computer Science from
-					Kingston University.
-				</p>
-				<p className="aboutParagraph">
-					My final year project focused on creating a website for a client.
-					Throughout the project I have created the front end using, HTML, CSS,
-					JavaScript and React. I utilised AWS Amplify to help build out the
-					back end and connect it to the front end. A relational database has
-					been used to store data and used GraphQL to manage fetching it.
-				</p>
-				<p className="aboutParagraph">
-					During my university years, I have focused on learning mobile app
-					development, databases, UX/UI and programming mainly in Java.
-				</p>
-				<p className="aboutParagraph">
-					Also, I became an academic mentor to help students understand the
-					university material and help them with their workshops. I have worked
-					as a QA engineer intern and I have some experience with automation
-					testing using Cypress and some manual testing.
-				</p>
-				<p className="aboutParagraph">
-					In my free time, I enjoy going on walks with my two golden retrievers,
-					baking desserts and snowboarding in the winter.
-				</p>
+const query = `query {
+	aboutCollection{
+	  items{
+		title
+		aboutDescription {
+			json
+		}
+		aboutParagraph1
+		aboutParagraph2
+		aboutParagraph3
+		aboutParagraph4
+		aboutParagraph5
+		aboutParagraph6
+		orsolya{
+		  url
+		}
+	  }
+	}
+  }`;
+
+function AboutPage() {
+	const [page, setPage] = useState(null);
+
+	useEffect(() => {
+		window
+			.fetch(
+				//read only public key:
+				`https://graphql.contentful.com/content/v1/spaces/${process.env.REACT_APP_YOUR_SPACE_ID}/`,
+				{
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+						//read only public key:
+						Authorization: `Bearer ${process.env.REACT_APP_YOUR_ACCESS_TOKEN}`,
+					},
+					body: JSON.stringify({ query }),
+				}
+			)
+			.then((response) => response.json())
+			.then(({ data, errors }) => {
+				if (errors) {
+					console.error(errors);
+				}
+				setPage(data.aboutCollection.items[0]);
+			});
+	}, []);
+
+	if (!page) {
+		return "Loading...";
+	}
+
+	return (
+		<PageContent>
+			<h1>{page.title}</h1>
+			<div id="article-container">
+				<div id="info">
+					<p className="aboutParagraph">
+						{documentToReactComponents(page.aboutDescription.json)}
+					</p>
+					{/* <p className="aboutParagraph">{page.aboutParagraph1}</p>
+					<p className="aboutParagraph">{page.aboutParagraph2}</p>
+					<p className="aboutParagraph">{page.aboutParagraph3}</p>
+					<p className="aboutParagraph">{page.aboutParagraph4}</p>
+					<p className="aboutParagraph">{page.aboutParagraph5}</p>
+					<p className="aboutParagraph">{page.aboutParagraph6}</p> */}
+				</div>
+				<img id="aboutImage" src={page.orsolya.url} alt="Orsolya smiling" />
 			</div>
-			<img id="aboutImage" src="profilePicLinkedin.jpg" alt="Orsolya smiling" />
-		</div>
-	</PageContent>
-);
+		</PageContent>
+	);
+}
 
 export default AboutPage;
