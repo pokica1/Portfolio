@@ -1,6 +1,7 @@
 import React from "react";
-import "./PageContent.css";
+import { StyledPageContent } from "./PageContent.Styled";
+// import "./PageContent.css";
 
 export const PageContent = ({ children }) => {
-	return <div className="PageContent">{children}</div>;
+	return <StyledPageContent>{children}</StyledPageContent>;
 };
