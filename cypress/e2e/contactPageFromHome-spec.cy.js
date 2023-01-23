@@ -4,8 +4,8 @@ describe("Goes to Contact Page from Home Page", () => {
 	});
 
 	it("clicks on contact button and visits contact page", () => {
-		cy.get("#homeContactButton").click();
+		cy.get('[data-testid="homeContactButton"]').click();
 		cy.url().should("include", "contact");
-		cy.get("#formImageContainer").should("be.visible");
+		cy.get('[data-testid="formImageContainer"]').should("be.visible");
 	});
 });

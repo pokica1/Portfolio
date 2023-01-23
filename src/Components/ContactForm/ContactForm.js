@@ -30,7 +30,7 @@ export const ContactForm = () => {
 	};
 
 	return (
-		<div id="formImageContainer">
+		<div id="formImageContainer" data-testid="formImageContainer">
 			<form
 				className={
 					isMessageSent ? "formContainer notVisible" : "formContainer visible"
