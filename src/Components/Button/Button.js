@@ -1,8 +1,9 @@
 import React from "react";
+import { StyledButton } from "./Button.Styled";
 import "./Button.css";
 
 export const Button = (props) => (
-	<div className="button-wrapper" id={props.id}>
+	<StyledButton data-cy="button-wrapper" id={props.id}>
 		{props.text}
-	</div>
+	</StyledButton>
 );

@@ -1,4 +1,6 @@
-.button-wrapper {
+import styled from "styled-components";
+
+export const StyledButton = styled.div`
 	display: inline-block;
 	border-radius: 20px;
 	padding-top: 10px;
@@ -10,19 +12,4 @@
 	color: black;
 	margin: 5px;
 	font-weight: bold;
-}
-/* a {
-	text-decoration: none;
-}
-a:visited {
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: none;
-}
-a:active {
-	text-decoration: none;
-}
-.active {
-	text-decoration: none;
-} */
+`;

@@ -5,6 +5,6 @@ describe("Goes to an unknown page", () => {
 
 	it("Page not found message and home button should be visible", () => {
 		cy.get("h1").contains("Oops, page not found");
-		cy.get(".button-wrapper").should("be.visible");
+		cy.get('[data-cy="button-wrapper"]').should("be.visible");
 	});
 });

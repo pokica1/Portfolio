@@ -4,7 +4,7 @@ describe("Goes to an unknown page", () => {
 	});
 
 	it("clicks on back to home button and end up on home page", () => {
-		cy.get(".button-wrapper").click();
+		cy.get('[data-cy="button-wrapper"]').click();
 		cy.url().should("include", "/");
 		cy.get(".article").should("be.visible");
 	});
