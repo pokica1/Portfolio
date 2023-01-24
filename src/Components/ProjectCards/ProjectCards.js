@@ -1,26 +1,26 @@
 import React from "react";
+import * as S from "./ProjectCards.Styled";
 import "./ProjectCards.css";
 import { FaGithub } from "react-icons/fa";
 
 function ProjectCard({ projectCard }) {
 	return (
-		<div id="projectCard-container">
-			<div id="projectTitle">{projectCard.title}</div>
+		<S.ProjectCardContainer>
+			<S.ProjectTitle>{projectCard.title}</S.ProjectTitle>
 			<div>
-				<img
-					id="projectImage"
+				<S.ProjectImage
 					src={projectCard.image.url}
 					alt={projectCard.image.title}
 				/>
 			</div>
-			<p id="projectDescription">{projectCard.description}</p>
-			<div id="link-container">
-				<p id="linkText">Check out the GitHub link here:</p>
+			<S.projectDescription>{projectCard.description}</S.projectDescription>
+			<S.LinkContainer>
+				<S.LinkText>Check out the GitHub link here:</S.LinkText>
 				<a href={projectCard.link} target="_blank" rel="noreferrer">
 					<FaGithub color="white" size="50px" />
 				</a>
-			</div>
-		</div>
+			</S.LinkContainer>
+		</S.ProjectCardContainer>
 	);
 }
 

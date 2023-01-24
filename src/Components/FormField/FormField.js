@@ -1,11 +1,11 @@
 import React from "react";
-import { StyledInputField, StyledLabel } from "./FormField.Styled";
+import * as S from "./FormField.Styled";
 
 export function FormField(props) {
 	return (
 		<>
-			<StyledLabel>{props.labelText}</StyledLabel>
-			<StyledInputField type={props.type} name={props.name} required />
+			<S.Label>{props.labelText}</S.Label>
+			<S.InputField type={props.type} name={props.name} required />
 		</>
 	);
 }
