@@ -1,7 +1,8 @@
 import React, { useRef, useState } from "react";
 import { FormField } from "../FormField/FormField";
+import * as S from "./ContactForm.Styled";
 import emailjs from "@emailjs/browser";
-import "./ContactForm.css";
+// import "./ContactForm.css";
 
 export const ContactForm = () => {
 	const form = useRef();
@@ -30,28 +31,26 @@ export const ContactForm = () => {
 	};
 
 	return (
-		<div id="formImageContainer" data-testid="formImageContainer">
-			<form
-				className={
-					isMessageSent ? "formContainer notVisible" : "formContainer visible"
-				}
-				ref={form}
-				onSubmit={sendEmail}
-			>
-				<FormField labelText="Name*" type="text" name="user_name" />
-				<FormField labelText="Email*" type="email" name="user_email" />
-				<label>Message*</label>
-				<textarea name="message" required />
-				<input className="submit" type="submit" value="Send" />
-			</form>
-			<div className={isMessageSent ? "message visible" : "message notVisible"}>
-				Thank you for your message, it has been sent!
-			</div>
-			<img
+		<S.FormImageContainer data-testid="formImageContainer">
+			{!isMessageSent && (
+				<S.FormContainer ref={form} onSubmit={sendEmail}>
+					<FormField labelText="Name*" type="text" name="user_name" />
+					<FormField labelText="Email*" type="email" name="user_email" />
+					<S.Label>Message*</S.Label>
+					<S.TextArea name="message" required />
+					<S.SubmitButton className="submit" type="submit" value="Send" />
+				</S.FormContainer>
+			)}
+			{isMessageSent && (
+				<S.SuccessMessage>
+					Thank you for your message, it has been sent!
+				</S.SuccessMessage>
+			)}
+			<S.ContactImage
 				id="contactImage"
 				src="contactImage.svg"
 				alt="woman standing with a big postcard"
 			/>
-		</div>
+		</S.FormImageContainer>
 	);
 };
