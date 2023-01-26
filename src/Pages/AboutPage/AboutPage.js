@@ -2,7 +2,8 @@ import { React } from "react";
 import { PageContent } from "../../Components/PageContent/PageContent";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import useContentfulHook from "../../useContentfulHook.js";
-import "./AboutPage.css";
+import * as S from "./AboutPage.Styled";
+// import "./AboutPage.css";
 
 const query = `query {
 	aboutCollection{
@@ -33,20 +34,19 @@ function AboutPage() {
 	return (
 		<PageContent>
 			<h1>{data.aboutCollection.items[0].title}</h1>
-			<div id="article-container">
-				<div id="info">
-					<div className="aboutParagraph">
+			<S.ArticleContainer>
+				<S.InfoContainer>
+					<S.AboutParagraph>
 						{documentToReactComponents(
 							data.aboutCollection.items[0].aboutDescription.json
 						)}
-					</div>
-				</div>
-				<img
-					id="aboutImage"
+					</S.AboutParagraph>
+				</S.InfoContainer>
+				<S.AboutImage
 					src={data.aboutCollection.items[0].orsolya.url}
 					alt={data.aboutCollection.items[0].orsolya.title}
 				/>
-			</div>
+			</S.ArticleContainer>
 		</PageContent>
 	);
 }
