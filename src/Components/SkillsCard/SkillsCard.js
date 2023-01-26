@@ -1,11 +1,12 @@
 import React from "react";
-import "./SkillsCard.css";
+import * as S from "./SkillsCard.Styled";
+// import "./SkillsCard.css";
 
 export const SkillsCard = (props) => (
-	<div className="icon-container">
+	<S.IconContainer>
 		<div>
-			<img className="image" src={props.src} alt={props.alt} />
+			<S.Image src={props.src} alt={props.alt} />
 		</div>
-		<div className="title">{props.title}</div>
-	</div>
+		<S.Title>{props.title}</S.Title>
+	</S.IconContainer>
 );

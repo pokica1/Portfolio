@@ -18,7 +18,7 @@ export const ProjectCardContainer = styled.div`
 
 	${DeviceSizes.mobile} {
 		width: 300px;
-		height: 600px;
+		max-height: 600px;
 	}
 `;
 
