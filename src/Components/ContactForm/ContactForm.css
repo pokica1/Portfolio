@@ -62,6 +62,7 @@ textarea:focus {
 	color: black;
 	font-weight: bold;
 	font-size: 20px;
+	border: none;
 }
 #contactImage {
 	width: 40%;
