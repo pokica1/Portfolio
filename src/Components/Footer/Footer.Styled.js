@@ -22,6 +22,12 @@ export const ThirdPartyURL = styled.a`
 export const Navlink = styled(NavLink)`
 	color: white;
 	text-decoration: none;
+	&.active::before {
+		content: "<";
+	}
+	&.active::after {
+		content: "/>";
+	}
 
 	${DeviceSizes.laptop} {
 		font-size: 14px;
