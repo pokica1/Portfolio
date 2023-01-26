@@ -33,7 +33,7 @@ function AboutPage() {
 
 	return (
 		<PageContent>
-			<h1>{data.aboutCollection.items[0].title}</h1>
+			<S.PageTitle>{data.aboutCollection.items[0].title}</S.PageTitle>
 			<S.ArticleContainer>
 				<S.InfoContainer>
 					<S.AboutParagraph>

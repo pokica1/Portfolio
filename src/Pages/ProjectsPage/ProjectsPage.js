@@ -2,7 +2,8 @@ import React from "react";
 import { PageContent } from "../../Components/PageContent/PageContent";
 import ProjectCards from "../../Components/ProjectCards/ProjectCards.js";
 import useContentfulHook from "../../useContentfulHook";
-import "./ProjectsPage.css";
+import * as S from "./ProjectsPage.Styled";
+// import "./ProjectsPage.css";
 
 const query = `query {
 	projectCollection {
@@ -34,10 +35,10 @@ function ProjectsPage() {
 
 	return (
 		<PageContent>
-			<h1 id="projectPageTitle">Projects</h1>
-			<div id="projectPage-container">
+			<S.PageTitle>Projects</S.PageTitle>
+			<S.ProjectPageContainer>
 				<ProjectCards projectCards={data.projectCollection.items} />
-			</div>
+			</S.ProjectPageContainer>
 		</PageContent>
 	);
 }

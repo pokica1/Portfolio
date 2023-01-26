@@ -1,6 +1,12 @@
 import styled from "styled-components/macro";
 import { DeviceSizes } from "../../Components/Styled/DeviceSizes";
 
+export const PageTitle = styled.h1`
+	color: white;
+	padding-top: 50px;
+	margin-top: 0px;
+`;
+
 export const ArticleContainer = styled.div`
 	display: flex;
 	flex-direction: row;
