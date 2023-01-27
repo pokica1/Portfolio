@@ -34,14 +34,18 @@
 	text-align: left;
 }
 #skills-title {
-	padding-bottom: 50px;
+	color: white;
+	padding-top: 50px;
+	margin-top: 0px;
 }
 #education-title {
-	padding-bottom: 50px;
+	color: white;
+	padding-top: 50px;
 	box-shadow: 0 -8px 6px -6px white;
 }
 #experience-title {
-	padding-bottom: 50px;
+	color: white;
+	padding-top: 50px;
 	box-shadow: 0 -8px 6px -6px white;
 }
 #experience-container {
