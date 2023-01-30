@@ -42,7 +42,7 @@ export const ContactForm = () => {
 				</S.FormContainer>
 			)}
 			{isMessageSent && (
-				<S.SuccessMessage>
+				<S.SuccessMessage data-testid="successMessage">
 					Thank you for your message, it has been sent!
 				</S.SuccessMessage>
 			)}

@@ -16,7 +16,7 @@ describe("Successful Message sent", () => {
 			[]
 		).as("sendMessage");
 		cy.wait("@sendMessage").its("response.statusCode").should("eq", 200);
-		cy.get(".message.visible").contains(
+		cy.get('[data-testid="successMessage"]').contains(
 			"Thank you for your message, it has been sent!"
 		);
 	});
