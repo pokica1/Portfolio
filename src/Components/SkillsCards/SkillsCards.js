@@ -1,6 +1,5 @@
 import React from "react";
 import * as S from "./SkillsCards.Styled";
-// import "./SkillsCard.css";
 
 function SkillsCard({ skillsCard }) {
 	return (

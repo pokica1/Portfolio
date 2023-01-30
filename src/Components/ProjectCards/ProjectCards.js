@@ -1,6 +1,5 @@
 import React from "react";
 import * as S from "./ProjectCards.Styled";
-import "./ProjectCards.css";
 import { FaGithub } from "react-icons/fa";
 
 function ProjectCard({ projectCard }) {

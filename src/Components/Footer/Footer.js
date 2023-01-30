@@ -1,6 +1,5 @@
 import React from "react";
 import * as S from "./Footer.Styled";
-import "./Footer.css";
 
 export const Footer = () => (
 	<S.Footer>

@@ -3,7 +3,6 @@ import { PageContent } from "../../Components/PageContent/PageContent";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import useContentfulHook from "../../useContentfulHook.js";
 import * as S from "./AboutPage.Styled";
-// import "./AboutPage.css";
 
 const query = `query {
 	aboutCollection{

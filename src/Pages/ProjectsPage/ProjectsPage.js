@@ -3,7 +3,6 @@ import { PageContent } from "../../Components/PageContent/PageContent";
 import ProjectCards from "../../Components/ProjectCards/ProjectCards.js";
 import useContentfulHook from "../../useContentfulHook";
 import * as S from "./ProjectsPage.Styled";
-// import "./ProjectsPage.css";
 
 const query = `query {
 	projectCollection {

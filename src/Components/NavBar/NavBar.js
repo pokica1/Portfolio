@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-// import { NavLink } from "react-router-dom";
-// import "./NavBar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import * as S from "./NavBar.Styled";
 

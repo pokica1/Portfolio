@@ -5,7 +5,6 @@ import { PageContent } from "../../Components/PageContent/PageContent";
 import * as S from "./HomePage.Styled";
 import { Button } from "../../Components/Button/Button";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-// import "./HomePage.css";
 
 const query = `query {
 	homeCollection{

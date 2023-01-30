@@ -6,7 +6,6 @@ import { FaGraduationCap, FaUserTie } from "react-icons/fa";
 import { PageContent } from "../../Components/PageContent/PageContent";
 import SkillsCards from "../../Components/SkillsCards/SkillsCards";
 import * as S from "./SkillsPage.Styled";
-// import "./SkillsPage.css";
 
 /*Collection order in Contentful: https://www.contentful.com/developers/docs/references/graphql/#/reference/collection-order */
 const query = `query {
