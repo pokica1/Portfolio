@@ -4,7 +4,7 @@ import * as S from "./NotFoundPage.Styled";
 import { PageContent } from "../../Components/PageContent/PageContent";
 import { NavLink } from "react-router-dom";
 import { Button } from "../../Components/Button/Button";
-import "./NotFoundPage.css";
+// import "./NotFoundPage.css";
 
 const query = `query {
 	notFoundPageCollection{
