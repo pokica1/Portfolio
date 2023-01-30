@@ -173,19 +173,22 @@ export const PerlegoLogo = styled.img`
 
 export const ExperienceDescriptionContainer = styled.div``;
 
-export const ExperienceParagraph = styled.p`
-	margin-top: 0px;
-	margin-bottom: 20px;
-	margin-right: 0px;
-	margin-left: 20px;
-	text-align: left;
-	${DeviceSizes.laptop} {
-		margin-left: 15px;
-	}
-	${DeviceSizes.tablet} {
-		margin-left: 0;
-	}
-	${DeviceSizes.mobile} {
-		margin-left: 0;
+export const ExperienceParagraph = styled.div`
+	p,
+	h3 {
+		margin-top: 0px;
+		margin-bottom: 20px;
+		margin-right: 0px;
+		margin-left: 20px;
+		text-align: left;
+		${DeviceSizes.laptop} {
+			margin-left: 15px;
+		}
+		${DeviceSizes.tablet} {
+			margin-left: 0;
+		}
+		${DeviceSizes.mobile} {
+			margin-left: 0;
+		}
 	}
 `;
