@@ -66,7 +66,7 @@ function SkillsPage() {
 				<S.SkillsCardContainer>
 					<SkillsCards skillsCards={data.skillCardCollection.items} />
 				</S.SkillsCardContainer>
-				<S.EducationTitle>
+				<S.EducationTitle data-testid="educationTitle">
 					<FaGraduationCap size="50px" color="white" />
 					{data.educationCollection.items[0].educationTitle}
 				</S.EducationTitle>
@@ -81,7 +81,7 @@ function SkillsPage() {
 						{data.educationCollection.items[0].educationDescription}
 					</S.EducationDescription>
 				</S.EducationContainer>
-				<S.ExperienceTitle>
+				<S.ExperienceTitle data-testid="experienceTitle">
 					<FaUserTie size="50px" color="white" />
 					{data.experienceCollection.items[0].experienceTitle}
 				</S.ExperienceTitle>

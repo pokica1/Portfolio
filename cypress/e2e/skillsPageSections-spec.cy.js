@@ -4,8 +4,8 @@ describe("Goes Skills Page", () => {
 	});
 
 	it("Skills, Education and Experience titles should be visible", () => {
-		cy.get("#skills-title").should("be.visible");
-		cy.get("#education-title").should("be.visible");
-		cy.get("#experience-title").should("be.visible");
+		cy.get('[data-testid="skillsTitle"]').should("be.visible");
+		cy.get('[data-testid="educationTitle"]').should("be.visible");
+		cy.get('[data-testid="experienceTitle"]').should("be.visible");
 	});
 });
