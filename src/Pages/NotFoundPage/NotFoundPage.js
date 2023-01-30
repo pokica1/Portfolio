@@ -36,7 +36,7 @@ function NotFoundPage() {
 					src={data.notFoundPageCollection.items[0].pageNotFoundImage.url}
 					alt={data.notFoundPageCollection.items[0].pageNotFoundImage.title}
 				/>
-				<S.PageTitle>
+				<S.PageTitle data-testid="pageTitle">
 					{data.notFoundPageCollection.items[0].pageTitle}
 				</S.PageTitle>
 				<NavLink to="/">

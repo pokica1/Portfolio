@@ -36,7 +36,7 @@ function HomePage() {
 		<PageContent>
 			<S.HomePageContainer>
 				<S.ArticleContainer>
-					<S.HomeArticle>
+					<S.HomeArticle data-testid="article">
 						{documentToReactComponents(
 							data.homeCollection.items[0].homeDescription.json
 						)}
