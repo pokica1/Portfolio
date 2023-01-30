@@ -59,7 +59,7 @@ function SkillsPage() {
 	return (
 		<PageContent>
 			<S.SkillsPageContainer>
-				<S.SkillsTitle>
+				<S.SkillsTitle data-testid="skillsTitle">
 					<HiOutlineLightBulb size="50px" color="white" />
 					Skills
 				</S.SkillsTitle>
