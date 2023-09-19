@@ -14,10 +14,12 @@ function ProjectCard({ projectCard }) {
 			</div>
 			<S.projectDescription>{projectCard.description}</S.projectDescription>
 			<S.LinkContainer>
-				<S.LinkText>Check out the GitHub link here:</S.LinkText>
-				<a href={projectCard.link} target="_blank" rel="noreferrer">
-					<FaGithub color="white" size="50px" />
-				</a>
+				<S.LinkText>
+					Check out the GitHub link here:{" "}
+					<a href={projectCard.link} target="_blank" rel="noreferrer">
+						<FaGithub color="white" size="30px" />
+					</a>
+				</S.LinkText>
 			</S.LinkContainer>
 		</S.ProjectCardContainer>
 	);
