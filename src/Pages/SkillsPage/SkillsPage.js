@@ -52,7 +52,7 @@ function SkillsPage() {
 	}
 
 	if (!data) {
-		return "Loading...";
+		return <PageContent></PageContent>;
 	}
 
 	return (

@@ -28,7 +28,7 @@ function HomePage() {
 	}
 
 	if (!data) {
-		return "Loading...";
+		return <PageContent></PageContent>;
 	}
 
 	return (

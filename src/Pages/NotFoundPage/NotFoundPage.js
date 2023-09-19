@@ -25,7 +25,7 @@ function NotFoundPage() {
 	}
 
 	if (!data) {
-		return "Loading...";
+		return <PageContent></PageContent>;
 	}
 
 	return (

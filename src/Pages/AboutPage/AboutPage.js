@@ -27,7 +27,7 @@ function AboutPage() {
 	}
 
 	if (!data) {
-		return "Loading...";
+		return <PageContent></PageContent>;
 	}
 
 	return (
