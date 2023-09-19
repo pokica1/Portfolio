@@ -7,6 +7,6 @@ export const PageContent = styled.div`
 	box-shadow: 0 -8px 6px -6px white;
 
 	${DeviceSizes.mobile} {
-		min-height: 500px;
+		min-height: 950px;
 	}
 `;
