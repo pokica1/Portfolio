@@ -10,7 +10,8 @@ React\
 JavaScript\
 HTML\
 CSS\
-Google Analytics
+Google Analytics\
+Contentful
 
 ### To run this project on the local computer :stopwatch::
 
