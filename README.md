@@ -2,7 +2,7 @@
 
 This portfolio project has been created with React Library. Contentful has been used to store and dynamically display content on the website.
 
-<!-- Click here to visit the live website: https://orsolyahubbarde.com -->
+Click here to visit the live website: https://orsolyahubbarde.com
 
 ## Main tools :hammer_and_wrench:
 
